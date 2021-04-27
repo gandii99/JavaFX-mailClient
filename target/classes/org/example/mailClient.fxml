@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="384.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MailClientController">
+   <children>
+      <Label layoutX="39.0" layoutY="114.0" text="Temat: " AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="110.0" />
+      <TextField fx:id="topicMail" layoutX="39.0" layoutY="131.0" promptText="Temat: ReReRe" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="125.0" />
+      <Label layoutX="41.0" layoutY="165.0" text="Treść: " AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="150.0" />
+      <TextArea fx:id="contentMail" layoutX="37.0" layoutY="172.0" prefHeight="170.0" prefWidth="310.0" promptText="Wprowadź treść maila" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="165.0" />
+      <Label layoutX="39.0" layoutY="15.0" text="Twój email:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="20.0" />
+      <TextField fx:id="senderMail" layoutX="39.0" layoutY="31.0" promptText="Email nadawcy" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="35.0" />
+      <Label layoutX="42.0" layoutY="56.0" text="Twoje hasło:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="60.0" />
+      <PasswordField fx:id="senderPassword" layoutX="42.0" layoutY="73.0" promptText="Hasło nadawcy" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="75.0" />
+      <Button fx:id="send" layoutX="140.0" layoutY="348.0" mnemonicParsing="false" onAction="#sendMail" prefHeight="31.0" prefWidth="79.0" text="Wyślij" AnchorPane.bottomAnchor="10.0" />
+      <ListView fx:id="listMailSend" layoutX="389.0" layoutY="71.0" prefHeight="266.0" prefWidth="165.0" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="71.0" />
+      <Label layoutX="405.0" layoutY="52.0" text="Adresy z bazy danych:" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="52.0" />
+      <Button layoutX="477.0" layoutY="17.0" mnemonicParsing="false" onAction="#switchToDataBase" prefHeight="25.0" prefWidth="90.0" text="Baza Danych" AnchorPane.rightAnchor="33.0" />
+      <Label layoutX="405.0" layoutY="21.0" text="Przejdź do: " />
+      <Label fx:id="error" layoutX="405.0" layoutY="350.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="250.0" />
+   </children>
+</AnchorPane>
